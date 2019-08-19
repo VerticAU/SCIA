@@ -1,0 +1,480 @@
+{
+  "id": "10908ed1-e355-4a06-967f-db09a21531f3",
+  "version": "2.0",
+  "name": "Feedbackform",
+  "url": "https://sciadev-scia.cs31.force.com",
+  "tests": [{
+    "id": "505dfd74-6ab1-4492-8b57-3cb92e5d4765",
+    "name": "Email response method",
+    "commands": [{
+      "id": "65acac3e-ec85-489b-8863-af8c8fcdc009",
+      "comment": "",
+      "command": "open",
+      "target": "/feedbackform",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "581e5b46-957c-444f-a0f8-23753a009f05",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "href"
+    }, {
+      "id": "99d64a52-13b2-4872-a22e-73c282a96d91",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["id=First Name *", "id"],
+        ["name=First Name *", "name"],
+        ["css=#First\\ Name\\ \\*", "css:finder"],
+        ["xpath=//input[@id='First Name *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[2]/div/form-group/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Selenium"
+    }, {
+      "id": "1c4878c2-0710-4e4b-b815-bb6a41593718",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[2]/form-group/div/div/div/input",
+      "targets": [
+        ["id=Last Name *", "id"],
+        ["name=Last Name *", "name"],
+        ["css=#Last\\ Name\\ \\*", "css:finder"],
+        ["xpath=//input[@id='Last Name *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[2]/div[2]/form-group/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form-group/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "a95b6d35-a443-45d8-87a2-8cf23fcedd9f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Preferred response method",
+      "targets": [
+        ["id=Preferred response method", "id"],
+        ["name=Preferred response method", "name"],
+        ["css=#Preferred\\ response\\ method", "css:finder"],
+        ["xpath=//select[@id='Preferred response method']", "xpath:attributes"],
+        ["xpath=//form-group[@id='disabledClass']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "551d3c0f-896d-47ab-9fa3-947509901db1",
+      "comment": "",
+      "command": "select",
+      "target": "id=Preferred response method",
+      "targets": [],
+      "value": "value=Email"
+    }, {
+      "id": "b6e58b85-5a48-4cd8-ac77-16c53d5c3cd9",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email *",
+      "targets": [],
+      "value": "test@gmail.com"
+    }, {
+      "id": "4691f295-fbf0-4686-877c-824e3d88a0b7",
+      "comment": "",
+      "command": "select",
+      "target": "id=What is the nature of the feedback? *",
+      "targets": [],
+      "value": "value=Compliment"
+    }, {
+      "id": "3b28f3ec-76c7-4cfb-926c-4d35465f5359",
+      "comment": "",
+      "command": "select",
+      "target": "id=What does the feedback relate to? *",
+      "targets": [
+        ["id=What does the feedback relate to? *", "id"],
+        ["name=What does the feedback relate to? *", "name"],
+        ["css=#What\\ does\\ the\\ feedback\\ relate\\ to\\?\\ \\*", "css:finder"],
+        ["xpath=//select[@id='What does the feedback relate to? *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[5]/div[2]/form-group/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form-group/div/div/div/select", "xpath:position"]
+      ],
+      "value": "value=Accommodation"
+    }, {
+      "id": "a8f79073-9651-4707-abfc-4ef1959b4a60",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=Details of feedback *", "id"],
+        ["name=Details of feedback *", "name"],
+        ["css=#Details\\ of\\ feedback\\ \\*", "css:finder"],
+        ["xpath=//textarea[@id='Details of feedback *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[6]/div/form-group/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "846238d4-6ea2-442f-a0ad-e4ee5b05ed02",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "493b25a3-b227-4cbb-b2a6-b219a79b670b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.donate-now",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dae22abb-abed-46c1-a08d-1a3577564865",
+      "comment": "",
+      "command": "pause",
+      "target": "12000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71fad709-5ec7-4e19-b2d4-eb7374b41127",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "new_href"
+    }, {
+      "id": "f6a077db-2c94-41c1-9e22-19de641d9b0c",
+      "comment": "",
+      "command": "if",
+      "target": "${href} == ${new_href}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bf0c177-b829-4645-ac67-5398bf6992c1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c71661e-f1dc-4cbb-82eb-af5ef46ad2cd",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "be2b2890-0932-469d-afdf-e3f43176323d",
+    "name": "Phone response method",
+    "commands": [{
+      "id": "07eba1ac-25cf-487b-ac0a-9155b6d1a1b0",
+      "comment": "",
+      "command": "open",
+      "target": "/feedbackform",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "866434e9-e63d-4298-b618-ba2b742a0d49",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "href"
+    }, {
+      "id": "24f96b65-301c-467b-b824-108eb34cab74",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["id=First Name *", "id"],
+        ["name=First Name *", "name"],
+        ["css=#First\\ Name\\ \\*", "css:finder"],
+        ["xpath=//input[@id='First Name *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[2]/div/form-group/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Selenium"
+    }, {
+      "id": "ecdfda86-d332-48fc-abc1-62f989e23435",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[2]/form-group/div/div/div/input",
+      "targets": [
+        ["id=Last Name *", "id"],
+        ["name=Last Name *", "name"],
+        ["css=#Last\\ Name\\ \\*", "css:finder"],
+        ["xpath=//input[@id='Last Name *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[2]/div[2]/form-group/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form-group/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "338ab547-055e-481a-94c7-11765abcf050",
+      "comment": "",
+      "command": "click",
+      "target": "id=Preferred response method",
+      "targets": [
+        ["id=Preferred response method", "id"],
+        ["name=Preferred response method", "name"],
+        ["css=#Preferred\\ response\\ method", "css:finder"],
+        ["xpath=//select[@id='Preferred response method']", "xpath:attributes"],
+        ["xpath=//form-group[@id='disabledClass']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cef7b30-3822-4ef9-a440-9587b94f7a7a",
+      "comment": "",
+      "command": "select",
+      "target": "id=Preferred response method",
+      "targets": [
+        ["id=Preferred response method", "id"],
+        ["name=Preferred response method", "name"],
+        ["css=#Preferred\\ response\\ method", "css:finder"],
+        ["xpath=//select[@id='Preferred response method']", "xpath:attributes"],
+        ["xpath=//form-group[@id='disabledClass']/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "value=Phone"
+    }, {
+      "id": "09de30a7-1ef5-468e-8797-f2aa934d82d1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-scope > .form-control",
+      "targets": [
+        ["css=.ng-scope > .form-control", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[4]/div[2]/form-group/div/div/div/group-input/input", "xpath:idRelative"],
+        ["xpath=//group-input/input", "xpath:position"]
+      ],
+      "value": "1234566755"
+    }, {
+      "id": "6974e156-d97e-4d15-b859-902121ee978f",
+      "comment": "",
+      "command": "select",
+      "target": "id=What is the nature of the feedback? *",
+      "targets": [],
+      "value": "value=Compliment"
+    }, {
+      "id": "04a97312-641d-4cf3-a6aa-908ca6623d1e",
+      "comment": "",
+      "command": "select",
+      "target": "id=What does the feedback relate to? *",
+      "targets": [
+        ["id=What does the feedback relate to? *", "id"],
+        ["name=What does the feedback relate to? *", "name"],
+        ["css=#What\\ does\\ the\\ feedback\\ relate\\ to\\?\\ \\*", "css:finder"],
+        ["xpath=//select[@id='What does the feedback relate to? *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[5]/div[2]/form-group/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form-group/div/div/div/select", "xpath:position"]
+      ],
+      "value": "value=Accommodation"
+    }, {
+      "id": "3209dd56-fd42-44b7-94b2-96701a086108",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=Details of feedback *", "id"],
+        ["name=Details of feedback *", "name"],
+        ["css=#Details\\ of\\ feedback\\ \\*", "css:finder"],
+        ["xpath=//textarea[@id='Details of feedback *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[6]/div/form-group/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "486c95a3-5ec5-4708-a162-247dce9adf5d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "934e7ea8-7783-4de8-b145-c3093f8b9cf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.donate-now",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b349a3f-5053-45bb-b10a-0280d75dd0eb",
+      "comment": "",
+      "command": "pause",
+      "target": "12000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84495269-14fc-4746-926f-683a2c3d29b2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "new_href"
+    }, {
+      "id": "e2907907-cf67-4c63-b0d9-9a7f34486e61",
+      "comment": "",
+      "command": "if",
+      "target": "${href} == ${new_href}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75e2396b-88b0-4109-b340-e15d6af4252f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8db318d0-0b08-46f1-81d6-10835c264f86",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b1d85ad1-1b54-4cde-b75d-3b530e5219c4",
+    "name": "Anonymous",
+    "commands": [{
+      "id": "d1e561db-2e2f-4e5b-91dd-f2d010972119",
+      "comment": "",
+      "command": "open",
+      "target": "/feedbackform",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cfd58b0-0b34-494b-b778-a57720e5ec0f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "href"
+    }, {
+      "id": "cb36ff49-3935-4fa9-853f-5084a11f144e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [],
+      "value": "Selenium"
+    }, {
+      "id": "6d746a5a-0557-4934-9f93-b86b45aca2c8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[2]/form-group/div/div/div/input",
+      "targets": [
+        ["id=Last Name *", "id"],
+        ["name=Last Name *", "name"],
+        ["css=#Last\\ Name\\ \\*", "css:finder"],
+        ["xpath=//input[@id='Last Name *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[2]/div[2]/form-group/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form-group/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "f8241e84-c0e5-4943-a732-c5118c10b7da",
+      "comment": "",
+      "command": "click",
+      "target": "name=isAnonymous",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8eb412dc-5bb9-48fe-bf31-4ab9fee34faa",
+      "comment": "",
+      "command": "select",
+      "target": "id=What is the nature of the feedback? *",
+      "targets": [],
+      "value": "value=Compliment"
+    }, {
+      "id": "87055ca1-9645-40b6-ae10-ca1bb909402e",
+      "comment": "",
+      "command": "select",
+      "target": "id=What does the feedback relate to? *",
+      "targets": [
+        ["id=What does the feedback relate to? *", "id"],
+        ["name=What does the feedback relate to? *", "name"],
+        ["css=#What\\ does\\ the\\ feedback\\ relate\\ to\\?\\ \\*", "css:finder"],
+        ["xpath=//select[@id='What does the feedback relate to? *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[5]/div[2]/form-group/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form-group/div/div/div/select", "xpath:position"]
+      ],
+      "value": "value=Accommodation"
+    }, {
+      "id": "0665b88f-b84e-4070-8106-ac9c5a2791db",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=Details of feedback *", "id"],
+        ["name=Details of feedback *", "name"],
+        ["css=#Details\\ of\\ feedback\\ \\*", "css:finder"],
+        ["xpath=//textarea[@id='Details of feedback *']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[6]/div/form-group/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9547090e-be1d-4130-bf88-c7004fb8e7e2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea",
+      "targets": [],
+      "value": "Test"
+    }, {
+      "id": "a462e101-b355-4402-b126-f5c76f35313c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.donate-now",
+      "targets": [
+        ["css=.donate-now", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//article[@id='post-177']/div/div/donate/div/main/section/div/form/div[7]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30d686fd-d56c-4687-b9d6-021f86a3c167",
+      "comment": "",
+      "command": "pause",
+      "target": "12000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04900d7c-4330-4c21-a86e-1163644d0818",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "new_href"
+    }, {
+      "id": "36347458-dea6-4f80-ac23-5f2bb8197df9",
+      "comment": "",
+      "command": "if",
+      "target": "${href} == ${new_href}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97b85698-d279-48b3-a279-7736e544a918",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53f1c37a-1353-400d-bc6d-176b38ad9fae",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0bfc30cf-69c3-4fca-a1ec-dde4320d3120",
+    "name": "Feedback Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["505dfd74-6ab1-4492-8b57-3cb92e5d4765", "be2b2890-0932-469d-afdf-e3f43176323d", "b1d85ad1-1b54-4cde-b75d-3b530e5219c4"]
+  }],
+  "urls": ["https://sciadev-scia.cs31.force.com/"],
+  "plugins": []
+}
